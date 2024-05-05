@@ -1,0 +1,96 @@
+<!--All pages should begin with <!DOCTYPE html>. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.-->
+<!DOCTYPE html>
+<html lang="en">
+<!--Notice that the entire contents of the page are nested within an html element. All other elements must be descendants of this html element.-->
+    <head>
+        <meta charset=utf-8>
+    <title>CatPhotoApp</title>
+<!--You can set browser behavior by adding self-closing meta elements in the head.Inside the head element, nest a meta element with an attribute named charset. Set to the value to utf-8 which tells the browser how to encode characters for the page.-->
+    </head>
+    <body>
+        <main>
+          <h1>CatPhotoApp</h1>
+
+
+          <section>
+            <h2>Cat Photos</h2>
+<!--TODO: Add link to cat photos-->
+<!--You can turn any text into a link, such as the text inside of a p element.-->
+          <p>See more <a target="_blank" href='https://freecatphotoapp.com'>cat photos</a> in our gallery.</p>
+          
+<!--"p" and "img" are elements-->
+          <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back"></a>
+<!--The command "img src" is used to put an image url-->
+<!--The alt attribute's text is used for screen readers to improve accessibility and is displayed if the image fails to load.-->
+<!--You can link to another page with the anchor (a) element. For example, <a href='https://freecodecamp.org'></a> would link to freecodecamp.org.-->
+          </section>
+
+
+
+
+            <section>
+                <h2>Cat Lists</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                 <li>cat nip</li>
+                 <li>laser pointers</li>
+                 <li>lasagna</li>
+                </ul>
+                <figure>
+                 <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate">
+                 <figcaption>Cats <em>love</em> lasagna.</figcaption>
+                </figure>
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                    <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+                </figure>
+            </section>
+
+
+
+
+                <section>
+                    <h2>Cat Form</h2>
+                    <form action="https://freecatphotoapp.com/submit-cat-photo">
+<!--The input element allows you several ways to collect data from a web form. Like img elements, input elements are self-closing and do not need closing tags.-->
+                    <fieldset>
+<!--The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form.-->                
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+                <label><input type="radio" id="Indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+<!--If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons.-->
+                <!--label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers). For example, <label><input type="radio"> cat</label> makes it so clicking the word cat also selects the corresponding radio button.-->                
+                <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>   
+                    </fieldset>
+
+
+                    <fieldset>
+                        <legend>WHat's your cat's personality?</legend>
+                        <input type="checkbox" id="loving" name="loving" value="personality" checked><label for="loving" checked>Loving</label>
+                        <input type="checkbox" id="lazy" name="lazy" value="personality"><label for="lazy">Lazy</label>
+                        <input type="checkbox" id="energetic" name="energetic" value="personality"><label for="energetic">Energetic</label>
+                    </fieldset>  
+                    
+                    
+                <!--The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.-->             
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required="">
+<!--There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer.-->
+                <button type="submit">Submit</button>
+<!--You can use radio buttons for questions where you want only one answer out of multiple options. Here is an example of a radio button with the option of cat: <input type="radio"> cat. Remember that input elements are self-closing.-->
+                    
+                    
+                    </form>
+                </section>
+            </main>
+        <footer>
+            <p>
+                No Copyrigth - <a href="https://www.freecodecamp.org">freeCodeCamp.org></a>
+            </p>
+        </footer>
+    </body>
+</html>

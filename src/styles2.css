@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    height: 25px;
+    width: 110px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+/*The box-shadow property lets you apply one or more shadows around an element. Here is basic syntax:
+
+box-shadow: offsetX offsetY color;
+Here's how the offsetX and offsetY values work:
+
+both offsetX and offsetY accept number values in px and other CSS units
+a positive offsetX value moves the shadow right and a negative value moves it left
+a positive offsetY value moves the shadow down and a negative value moves it up
+if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.*/
+
+.cap, .sleeve {
+    display: inline-block;
+  }
+
+/*You're already familiar with using the rgb function to set colors. To add an alpha channel to an rgb color, use the rgba function instead.
+The rgba function works just like the rgb function, but takes one more number from 0 to 1.0 for the alpha channel:
+rgba(redValue, greenValue, blueValue, alphaValue);*/
+
+.red {
+    background: linear-gradient( rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgba(122, 74, 14, 0.8)
+  }
+/*          linear-gradient(gradientDirection, color1, color2, ...);
+            A gradient is when one color transitions into another. The CSS linear-gradient function lets you control the direction of the transition along a line, and which colors are used.
+            One thing to remember is that the linear-gradient function actually creates an image element, and is usually paired with the background property which can accept an image as a value.*/
+  
+  .green {
+    background: linear-gradient( #55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+/*          You may already be familiar with decimal, or base 10 values, which go from 0 - 9. Hexadecimal, or base 16 values, go from 0 - 9, then A - F:
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+            With hex colors, 00 is 0% of that color, and FF is 100%*/
+  
+  .blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8)
+  }
+/*          The HSL color model, or hue, saturation, and lightness, is another way to represent colors.
+            he CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.*/

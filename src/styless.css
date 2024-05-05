@@ -1,0 +1,87 @@
+h1, h2, p {
+    text-align: center;
+}
+body {
+    padding: 20px;
+    font-family: sans-serif;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 30px;
+}
+.established {
+    font-family: italic;
+}
+/*You can use the id selector to target a specific element with an id attribute. An id selector is defined by placing the hash symbol # directly in front of the element's id value. For example, if an element has the id of cat then you would target that element like this:
+
+#cat {
+  width: 250px;
+}*/
+.menu {
+    max-width: 500px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+    width: 80%;
+}
+img {
+    margin-top: -25px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+.bottom-line{
+    margin-top: 25px;
+  }
+.flavor, .dessert {
+    width: 75%;
+    text-align: left;
+}
+/*ell that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.*/
+.price {
+    width: 25%;
+    text-align: right;
+}
+.item p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 18px;
+
+}
+h1, h2{
+    font-family: Impact, serif;
+}
+
+/*FOOTER*/
+
+footer {
+    font-size: 14px;
+}
+.address {
+    margin-bottom: 5px;
+}
+a {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: brown;
+}
+a:active {
+    color: brown;
+}
